@@ -3012,6 +3012,11 @@ h4,
 h5,
 h6 {
   color: #a50b84;
+  margin-bottom: .2em;
+}
+
+h1 {
+  margin-bottom: .5em;
 }
 
 p.lead {
@@ -3217,4 +3222,44 @@ figure.destra {
   float: right; 
   height: auto;
   max-width: 40%;
+}
+
+@media print {
+  header,
+  footer,
+  nav {
+    display: none;
+  }
+  body {
+    font-size: 14px;
+  }
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: 0;
+  }
+  h1 {
+    border-bottom: 2px solid #444; 
+    display: block;
+    font-size: 22px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  h4 {
+    font-size: 16px;
+  }
+  h5 {
+    font-size: 14px;
+  }
+  h6 {
+    font-size: 12px;
+  }
 }
