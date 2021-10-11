@@ -203,6 +203,7 @@ figure.hero-figure {
 
 figure.figure {
     padding-top: .3rem;
+    @extend .text-center;
     border: 3px double $gray-color;
     // @include shadow-variant(.3rem);
     figcaption {
@@ -313,10 +314,10 @@ section.home-section-last {
 //     .home-dx {
 //         order: 3;
 //     }
-//     .pagina {
+//     .pagina-content {
 //         order: 1;
 //     }
-//     .pagina-nav {
+//     .pagina-navigation {
 //         order: 2;
 //     }
 // }

@@ -2926,7 +2926,8 @@ a.text-error:visited {
   text-align: right;
 }
 
-.text-center {
+.text-center,
+figure.figure {
   text-align: center;
 }
 
