@@ -19,19 +19,26 @@
                     <span class="testata-titolo">&nbsp;Il Bosco Didattico</span>
                 </section>
                 <section class="navbar-section">
-                    <form action="https://duckduckgo.com/">
+                    <form action="https://duckduckgo.com/" class="hide-md">
                         <input type="hidden" name="sites" value="boscodidattico.provincia.cremona.it">
                         <div class="input-group input-inline">
                             <input class="form-input" type="text" name="q" placeholder="cerca" aria-label="Testo da cercare">
                             <button class="btn btn-primary input-group-btn s-rounded" type="submit" aria-label="Cerca"><span class="icon icon-search"></span></button>&nbsp;
                         </div>
+
                     </form>
                     <div class="hide-md">
                         &nbsp;<a href="https://ecomuseo.provincia.cremona.it" title="Vai al sito dell'Ecomuseo"><img src="img/logoEcomuseo80.png" alt="Logo dell'Ecomuseo"></a>
                     </div>
+                    <div class="show-md">
+                    <button class="icon icon-search btn btn-primary" onclick="toggleSearchBox()"></button>
+                    </div>
                 </section>
             </header>
         </div>
+                <div id="mobileSearch">
+                    Cerco da mobile
+                </div>
         <ul class="breadcrumb container grid-xl">
             <li class="breadcrumb-item">
                 <a href="./"><span class="icon-home aria-hidden-true">&nbsp;</span>Home</a>
@@ -254,5 +261,15 @@ Alcune delle specie considerate sono state inoltre raggruppate secondo le loro c
                 </div>
             </div>
         </footer>
+        <script>
+            function toggleSearchBox() {
+                var x = document.getElementById("mobileSearch");
+                if (x.style.display === "none" || x.style.display === '') {
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "none";
+                }
+            } 
+        </script>
     </body>
 </html>

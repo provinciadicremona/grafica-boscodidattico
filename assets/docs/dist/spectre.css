@@ -3165,10 +3165,8 @@ p.lead {
   }
 }
 
-@media (max-width: 600px) {
-  .testata-titolo {
-    display: none;
-  }
+#mobileSearch {
+  display: none;
 }
 
 .page-navigation {
