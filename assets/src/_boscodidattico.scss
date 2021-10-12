@@ -74,6 +74,14 @@ p.lead {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     margin-bottom: $unit-5;
 }
+.testata-logo {
+    @media (max-width: $size-md) {
+        img {
+            max-width: 60%;
+            height: auto;
+        }
+    }
+}
 .testata-titolo {
     text-shadow: 0 1px 1px rgba(0,0,0,.50);
     color: $light-color;
@@ -83,6 +91,47 @@ p.lead {
     }
     @media (max-width: $size-sm) {
         display: none;
+    }
+}
+
+// ******************************
+// Struttura delle pagine normali
+// ******************************
+
+// Container principale, all'interno trovano posto
+// la navigazione sulla sinistra ed il testo della 
+// pagina sulla destra.
+.main-container {
+    @extend .container;
+    @extend .grid-xl;
+}
+
+.page-navigation {
+    @extend .column;
+    @extend .col-3;
+    @extend .col-md-12;
+    border-right: 1px dashed $primary-color;
+    @media (max-width: $size-md) {
+        order: 2;
+    }
+    ul {
+        @extend .menu;
+        li {
+            @extend .menu-item;
+            h3, h4 {
+                @extend .text-primary;
+            }
+        }
+    }
+}
+
+.page-content {
+    @extend .column;
+    @extend .col-8;
+    @extend .col-mx-auto;
+    @extend .col-md-12;
+    @media (max-width: $size-md) {
+        order: 1;
     }
 }
 
@@ -284,10 +333,6 @@ section.home-section-last {
     padding-bottom: 0;
 }
 // Colonne pagine normali
-.pagina-sx {
-    @extend .col-3;
-    @extend .col-md-12;
-}
 .pagina-dx {
     @extend .col-8;
     @extend .col-mx-auto;
