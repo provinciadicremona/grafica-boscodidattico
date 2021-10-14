@@ -61,7 +61,7 @@ p.lead {
 
     &:not(:first-child) {
       &::before {
-        color: $error-color;
+        color: $primary-color;
       }
     }
   }
@@ -198,7 +198,7 @@ footer {
             text-decoration: none;
         }
     }
-    .footer-titolo {
+    .footer-title {
         color: $gray-color;
         @extend .h3;
         @media (max-width: $size-md) {
@@ -210,8 +210,14 @@ footer {
     }
 
     .footer-info {
+        @extend .column;
         @extend .col-4;
         @extend .col-md-12;
+    }
+
+    .footer-end {
+        @extend .column;
+        @extend .col-12;
     }
 }
 

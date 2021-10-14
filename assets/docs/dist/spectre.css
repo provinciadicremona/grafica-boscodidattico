@@ -333,7 +333,7 @@ h6 {
 .h2,
 .testata-titolo,
 .h3,
-footer .footer-titolo,
+footer .footer-title,
 .h4,
 .h5,
 .h6 {
@@ -353,7 +353,7 @@ h2,
 
 h3,
 .h3,
-footer .footer-titolo {
+footer .footer-title {
   font-size: 1.4rem;
 }
 
@@ -1444,10 +1444,14 @@ video.video-responsive::before {
 .cols.col-gapless > .testata,
 .cols.col-gapless > .page-navigation,
 .cols.col-gapless > .page-content,
+footer .cols.col-gapless > .footer-info,
+footer .cols.col-gapless > .footer-end,
 .columns.col-gapless > .column,
 .columns.col-gapless > .testata,
 .columns.col-gapless > .page-navigation,
-.columns.col-gapless > .page-content {
+.columns.col-gapless > .page-content,
+footer .columns.col-gapless > .footer-info,
+footer .columns.col-gapless > .footer-end {
   padding-left: 0;
   padding-right: 0;
 }
@@ -1463,7 +1467,9 @@ video.video-responsive::before {
 .column,
 .testata,
 .page-navigation,
-.page-content {
+.page-content,
+footer .footer-info,
+footer .footer-end {
   -ms-flex: 1;
   flex: 1;
   max-width: 100%;
@@ -1473,6 +1479,7 @@ video.video-responsive::before {
 
 [class~="col-"].col-12,
 .testata[class~="col-"],
+footer .footer-end[class~="col-"],
 [class~="col-"].col-11,
 [class~="col-"].col-10,
 [class~="col-"].col-9,
@@ -1497,18 +1504,27 @@ footer .footer-info[class~="col-"],
 .testata,
 .col-12.page-navigation,
 .col-12.page-content,
+footer .col-12.footer-info,
+footer .footer-info.testata,
+footer .footer-end,
 .column.col-11,
 .col-11.testata,
 .col-11.page-navigation,
 .col-11.page-content,
+footer .col-11.footer-info,
+footer .col-11.footer-end,
 .column.col-10,
 .col-10.testata,
 .col-10.page-navigation,
 .col-10.page-content,
+footer .col-10.footer-info,
+footer .col-10.footer-end,
 .column.col-9,
 .col-9.testata,
 .col-9.page-navigation,
 .col-9.page-content,
+footer .col-9.footer-info,
+footer .col-9.footer-end,
 .column.col-8,
 .col-8.testata,
 .testata.home-wide,
@@ -1517,12 +1533,22 @@ footer .footer-info[class~="col-"],
 .page-navigation.home-wide,
 .page-navigation.pagina-dx,
 .page-content,
+footer .col-8.footer-info,
+footer .footer-info.page-content,
+footer .footer-info.home-wide,
+footer .footer-info.pagina-dx,
+footer .col-8.footer-end,
+footer .footer-end.page-content,
+footer .footer-end.home-wide,
+footer .footer-end.pagina-dx,
 .column.home-wide,
 .column.pagina-dx,
 .column.col-7,
 .col-7.testata,
 .col-7.page-navigation,
 .col-7.page-content,
+footer .col-7.footer-info,
+footer .col-7.footer-end,
 .column.col-6,
 .col-6.testata,
 .testata.home-sx,
@@ -1533,46 +1559,64 @@ footer .footer-info[class~="col-"],
 .col-6.page-content,
 .page-content.home-sx,
 .page-content.home-dx,
+footer .col-6.footer-info,
+footer .footer-info.home-sx,
+footer .footer-info.home-dx,
+footer .col-6.footer-end,
+footer .footer-end.home-sx,
+footer .footer-end.home-dx,
 .column.home-sx,
 .column.home-dx,
 .column.col-5,
 .col-5.testata,
 .col-5.page-navigation,
 .col-5.page-content,
+footer .col-5.footer-info,
+footer .col-5.footer-end,
 .column.col-4,
 .col-4.testata,
-footer .testata.footer-info,
 .testata.home-narrow,
 .col-4.page-navigation,
-footer .page-navigation.footer-info,
 .page-navigation.home-narrow,
 .col-4.page-content,
-footer .page-content.footer-info,
 .page-content.home-narrow,
-footer .column.footer-info,
+footer .footer-info,
+footer .col-4.footer-end,
+footer .footer-end.home-narrow,
 .column.home-narrow,
 .column.col-3,
 .col-3.testata,
 .page-navigation,
 .col-3.page-content,
+footer .col-3.footer-info,
+footer .footer-info.page-navigation,
+footer .col-3.footer-end,
+footer .footer-end.page-navigation,
 .column.col-2,
 .col-2.testata,
 .col-2.page-navigation,
 .col-2.page-content,
+footer .col-2.footer-info,
+footer .col-2.footer-end,
 .column.col-1,
 .col-1.testata,
 .col-1.page-navigation,
 .col-1.page-content,
+footer .col-1.footer-info,
+footer .col-1.footer-end,
 .column.col-auto,
 .col-auto.testata,
 .col-auto.page-navigation,
-.col-auto.page-content {
+.col-auto.page-content,
+footer .col-auto.footer-info,
+footer .col-auto.footer-end {
   -ms-flex: none;
   flex: none;
 }
 
 .col-12,
-.testata {
+.testata,
+footer .footer-end {
   width: 100%;
 }
 
@@ -3138,7 +3182,7 @@ p.lead {
 }
 
 .breadcrumb .breadcrumb-item:not(:first-child)::before {
-  color: #e85600;
+  color: #910172;
 }
 
 .testata {
@@ -3275,18 +3319,18 @@ footer :link:hover {
   text-decoration: none;
 }
 
-footer .footer-titolo {
+footer .footer-title {
   color: #bcc3ce;
 }
 
 @media (max-width: 840px) {
-  footer .footer-titolo {
+  footer .footer-title {
     font-size: 1rem;
   }
 }
 
 @media (max-width: 600px) {
-  footer .footer-titolo {
+  footer .footer-title {
     font-size: .8rem;
   }
 }
