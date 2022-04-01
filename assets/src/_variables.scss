@@ -5,27 +5,26 @@ $version: "0.5.9";
 $rtl: false !default;
 
 // Core colors
-// $primary-color: #5755d9 !default;
-// $primary-color: #c02cd3 !default;
-// $primary-color: #a50b84 !default;
-$primary-color: #910172 !default;
+// $primary-color: #602b0e !default;
+$primary-color: #552a1b !default;
 $primary-color-dark: darken($primary-color, 3%) !default;
 $primary-color-light: lighten($primary-color, 3%) !default;
 // Control colors
-// $success-color: #32b643 !default;
-// $success-color: #0a8218 !default;
-$success-color: #006329 !default;
-// $warning-color: #ffb700 !default;
+// $success-color: #002517 !default;
+$success-color: #113321 !default;
 $warning-color: lighten(darkseagreen, 10%) !default;
-$error-color: #e85600 !default;
+// $error-color: #e85600 !default;
+// $error-color: #ede3d3 !default;
+$error-color: #b50000 !default;
 
-$secondary-color: lighten($primary-color, 37.5%) !default;
+$secondary-color: lighten($primary-color, 45%) !default;
 // $secondary-color: lighten(darkseagreen, 10%) !default;
 $secondary-color-dark: darken($secondary-color, 3%) !default;
 $secondary-color-light: lighten($secondary-color, 3%) !default;
 
 // Gray colors
-$dark-color: #303742 !default;
+// $dark-color: #303742 !default;
+$dark-color: #332 !default;
 $light-color: #fff !default;
 $gray-color: lighten($dark-color, 55%) !default;
 $gray-color-dark: darken($gray-color, 30%) !default;
@@ -42,8 +41,8 @@ $bg-color-light: $light-color !default;
 $code-color: #d73e48 !default;
 $highlight-color: #ffe9b3 !default;
 $body-bg: $bg-color-light !default;
-$body-font-color: lighten($dark-color, 5%) !default;
-$link-color: darken($primary-color, 5%) !default;
+$body-font-color: $dark-color !default;
+$link-color: $primary-color !default;
 $link-color-dark: darken($link-color, 10%) !default;
 $link-color-light: lighten($link-color, 10%) !default;
 
@@ -86,7 +85,7 @@ $line-height: 1.2rem !default;
 $layout-spacing: $unit-2 !default;
 $layout-spacing-sm: $unit-1 !default;
 $layout-spacing-lg: $unit-4 !default;
-$border-radius: $unit-h !default;
+$border-radius: $unit-1 !default;
 $border-width: $unit-o !default;
 $border-width-lg: $unit-h !default;
 $control-size: $unit-9 !default;
